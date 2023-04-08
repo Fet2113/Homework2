@@ -47,7 +47,7 @@ public class Main {
         System.out.println("Всего работников в компании - " + worker + " человек");
         var allWorker = worker + 94;
         var neededTime = allWorker * 8;
-        System.out.println("Если в компании работает " + allWorker + " человек, то всего " + neededTime + " часов работы может быть поделено между сотрудниками");
+        System.out.println("Если в компании работает " + allWorker + " человек, то всего " + neededTime + " часов работы может быть поделено между сотрудниками.");
     }
 
 }
