@@ -86,11 +86,11 @@ public class Main {
         int twentyminCapacityM = 20 * minCapacityM;
         System.out.println("«За 20 мин машина произвела " + twentyminCapacityM + " штук бутылок");
         int hourCapacityM = 60 * minCapacityM;
-        int dayCapacityM = 24 * hourCapacityM * minCapacityM;
+        int dayCapacityM = 24 * hourCapacityM;
         System.out.println("«За сутки машина произвела " + dayCapacityM + " штук бутылок");
-        int treedayCapacityM = 3 * dayCapacityM * minCapacityM;
+        int treedayCapacityM = 3 * dayCapacityM;
         System.out.println("«За три дня машина произвела " + treedayCapacityM + " штук бутылок");
-        int monthCapacityM = 30 * dayCapacityM * minCapacityM;
+        int monthCapacityM = 30 * dayCapacityM;
         System.out.println("«За месяц машина произвела " + monthCapacityM + " штук бутылок");
         byte allPaint = 120;
         byte whitePaint = 2;
@@ -103,7 +103,11 @@ public class Main {
         short milk = 2;
         byte icecreamPlombir = 2;
         byte egg = 4;
-        float breakfastSportsmen = ((banana * 80) + (milk * 105) + (icecreamPlombir * 100) + (egg * 70));
+        byte bananaWeight = 80;
+        short milkWeght = 105;
+        byte icecreamPlombirWeight = 100;
+        byte eggWeight = 70;
+        float breakfastSportsmen = ((banana * bananaWeight) + (milk * milkWeght) + (icecreamPlombir * icecreamPlombirWeight) + (egg * eggWeight));
         System.out.println("Завтрак спортсмена в граммах " + breakfastSportsmen + " грамм");
         float kg = 1000f;
         float breakfastSportsmenkg = breakfastSportsmen / kg;
@@ -122,13 +126,19 @@ int Den = 83690;
 int Kristy = 76230;
 int difMary = Mary * 10 / 100;
 int salaryMary = difMary + Mary;
-        System.out.println("Маша теперь получает " + salaryMary + " рублей. Годовой доход вырос на " + difMary + " рублей");
+int yearsalaryMary = 12 * Mary;
+        int yearnewsalaryMary = 12 * salaryMary;
+        System.out.println("Маша теперь получает " + salaryMary + " рублей. Годовой доход вырос на " + (yearnewsalaryMary - yearsalaryMary) + " рублей");
         int difDen = Den * 10 / 100;
         int salaryDen = difDen + Den;
-        System.out.println("Денис теперь получает " + salaryDen + " рублей. Годовой доход вырос на " + difDen + " рублей");
+                int yearsalaryDen = 12 * Den;
+        int yearnewsalaryDen = 12 * salaryDen;
+        System.out.println("Денис теперь получает " + salaryDen + " рублей. Годовой доход вырос на " + (yearnewsalaryDen - yearsalaryDen) + " рублей");
         int difKristy = Kristy * 10 / 100;
         int salaryKristy = difKristy + Kristy;
-        System.out.println("Кристина теперь получает " + salaryKristy + " рублей. Годовой доход вырос на " + difKristy + " рублей");
+        int yearsalaryKristy = 12 * Kristy;
+        int yearnewsalaryKristy = 12 * salaryKristy;
+        System.out.println("Кристина теперь получает " + salaryKristy + " рублей. Годовой доход вырос на " + (yearnewsalaryKristy - yearsalaryKristy) + " рублей");
     }
 
 }
